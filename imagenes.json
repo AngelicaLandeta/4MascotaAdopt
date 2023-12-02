@@ -1,0 +1,63 @@
+[
+    {
+      "imagen": "img/dog1.jpg",
+      "titulo": "Tyler",
+      "descripcion": "Macho 3 meses"
+    },
+    {
+      "imagen": "img/dog2.jpg",
+      "titulo": "Wilson",
+      "descripcion": "Macho 1 año"
+    },
+    {
+      "imagen": "img/dog3.jpg",
+      "titulo": "Mia",
+      "descripcion": "Hembra 5 meses"
+    },
+    {
+        "imagen": "img/dog4.jpg",
+        "titulo": "Luna",
+        "descripcion": "Hembra 3 años"
+    }, 
+    {
+        "imagen": "img/dog5.jpg",
+        "titulo": "Chocolate",
+        "descripcion": "Hembra 6 meses"
+    },
+    {
+        "imagen": "img/dog6.jpg",
+        "titulo": "Miky",
+        "descripcion": "Macho 4 meses"
+    },
+    {
+        "imagen": "img/cat7.jpg",
+        "titulo": "Oreo",
+        "descripcion": "Macho 3 meses"
+    },
+    {
+        "imagen": "img/cat8.jpg",
+        "titulo": "Sona",
+        "descripcion": "Macho 4 meses"
+    },
+    {
+        "imagen": "img/dog9.jpg",
+        "titulo": "Argos",
+        "descripcion": "Macho 2 años"
+    },
+    {
+        "imagen": "img/cat10.jpg",
+        "titulo": "Butter",
+        "descripcion": "Hembra 2 meses"
+    },
+    {
+        "imagen": "img/cat11.jpg",
+        "titulo": "Snow",
+        "descripcion": "Macho 3 años"
+    },
+    {
+        "imagen": "img/cat12.jpg",
+        "titulo": "Coco",
+        "descripcion": "Macho 1 año"
+    }
+  ]
+  

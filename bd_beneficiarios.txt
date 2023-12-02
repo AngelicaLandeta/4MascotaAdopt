@@ -1,0 +1,120 @@
+<?php
+// Establecer la conexión con la base de datos (reemplaza con tus propios detalles)
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "beneficiarios";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+
+// Manejar el formulario cuando se envía
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Obtener datos del formulario (asegúrate de validar y limpiar los datos antes de usarlos)
+    //$beneficiario1 = $_POST['nombre1Marcha1'];
+    $porcentaje = $_POST['porcentaje'];
+    //$beneficiario2 = $_POST['nombre2Marcha1'];
+    //$porcentaje2 = $_POST['porcentaje2Marcha1'];
+
+    //$beneficiario3 = $_POST['nombre3Marcha2'];
+    //$porcentaje3 = $_POST['porcentaje3Marcha2'];
+    //$beneficiario4 = $_POST['nombre4Marcha2'];
+    //$porcentaje4 = $_POST['porcentaje4Marcha2'];
+
+    //$beneficiario5 = $_POST['nombre5Gastos1'];
+    //$porcentaje5 = $_POST['porcentaje5Gastos1'];
+    //$beneficiario6 = $_POST['nombre6Gastos1'];
+    //$porcentaje6 = $_POST['porcentaje6Gastos1'];
+
+    //$beneficiario7 = $_POST['nombre7Gastos2'];
+    //$porcentaje7 = $_POST['porcentaje7Gastos2'];
+    //$beneficiario8 = $_POST['nombre8Gastos2'];
+    //$porcentaje8 = $_POST['porcentaje8Gastos2'];
+
+    $testigo1 = $_POST["testigo1"];
+    $testigo2 = $_POST["testigo2"];
+    $nombre = $_POST["nombre"];
+    $app = $_POST["app"];
+    $apm = $_POST["apm"];
+    $fecha = isset($_POST["fecha"]) ? $_POST["fecha"] : null;
+    $id_unidad = $_POST['unidadAcademica'];
+
+    $id_beneficiario = $_POST['id_beneficiario']; // Asegúrate de obtener este valor correctamente
+
+    
+
+    // Consultas de inserción para marcha_1
+    $sql_marcha_1_1 = "INSERT INTO marcha_1 (nombre, app, apm, porcentaje, id_beneficiario) 
+                        VALUES ($nombre, $app, $apm, $porcentaje, $id_beneficiario)";
+
+    $sql_marcha_1_2 = "INSERT INTO marcha_1 (nombre, app, apm, porcentaje, id_beneficiario) 
+                        VALUES ($nombre, $app, $apm, $porcentaje, $id_beneficiario)";
+
+    
+    $sql_marcha_2_1 = "INSERT INTO marcha_1 (nombre, app, apm, porcentaje, id_beneficiario) 
+    VALUES ($nombre, $app, $apm, $porcentaje, $id_beneficiario)";
+
+    $sql_marcha_2_2 = "INSERT INTO marcha_1 (nombre, app, apm, porcentaje, id_beneficiario) 
+    VALUES ($nombre, $app, $apm, $porcentaje, $id_beneficiario)";
+    
+
+    $sql_gastos_1_1 = "INSERT INTO gastos_1 (nombre, app, apm, porcentaje, id_beneficiario) 
+                        VALUES ($nombre, $app, $apm, $porcentaje, $id_beneficiario)";
+
+    $sql_gastos_1_2 = "INSERT INTO gastos_1 (nombre, app, apm, porcentaje, id_beneficiario) 
+                        VALUES ($nombre, $app, $apm, $porcentaje, $id_beneficiario)";
+    
+    $sql_gastos_2_1 = "INSERT INTO gastos_1 (nombre, app, apm, porcentaje, id_beneficiario) 
+                        VALUES ($nombre, $app, $apm, $porcentaje, $id_beneficiario)";
+
+    $sql_gastos_2_2 = "INSERT INTO gastos_1 (nombre, app, apm, porcentaje, id_beneficiario) 
+                        VALUES ($nombre, $app, $apm, $porcentaje, $id_beneficiario)";
+
+    
+    $sql = "INSERT INTO beneficiario (id_beneficiario, nombre, app, apm, fecha, testigo_1, testigo_2, aspabuap, buap, id_unidad) 
+    VALUES ('$id_beneficiario', '$nombre', '$app', '$apm', '$fecha', '$testigo1', '$testigo2', '', '', '$id_unidad')";
+
+    // Antes de ejecutar la consulta de beneficiario, verifica si la unidad existe
+    // Antes de ejecutar la consulta de beneficiario, verifica si la unidad existe
+    // Consulta para verificar si la unidad existe
+    
+
+
+    echo $sql;
+    echo $sql_marcha_1_1;
+    echo $sql_marcha_1_2;
+    echo $sql_marcha_2_1;
+    echo $sql_marcha_2_2;
+    echo $sql_gastos_1_1;
+    echo $sql_gastos_1_2;
+    echo $sql_gastos_2_1;
+    echo $sql_gastos_2_2;
+
+
+    //Ejecutar las consultas
+    //if ($conn->query($sql) === TRUE && $conn->query($sql_marcha_1_1) === TRUE && $conn->query($sql_marcha_1_2) === TRUE && $conn->query($sql_marcha_2_1) === TRUE && $conn->query($sql_marcha_2_2) === TRUE && $conn->query($sql_gastos_1_1) === TRUE && $conn->query($sql_gastos_1_2) === TRUE && $conn->query($sql_gastos_2_1) === TRUE && $conn->query($sql_gastos_2_2) === TRUE) {
+        //echo "Datos insertados correctamente.";
+    //} else {
+        //echo "Error al insertar datos: " . $conn->error;
+    //}
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
